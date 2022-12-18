@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 3rem 1rem;
+    padding: 3rem 2rem;
+
+    .item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+
+      &__action{
+        a{
+          text-decoration: none;
+          color : #219ebc;
+          border: 1px solid #219ebc;
+          border-radius: 1rem;
+          padding: 1rem 1.5rem;
+          transition: all 0.3s ease;
+          margin: 0.5rem;
+
+          &:hover{
+            color: white;
+            border: 1px solid white;
+            background-color: #219ebc;
+          }
+        }
+
+        .delete{
+          color : #ef233c;
+          border: 1px solid #ef233c;
+          &:hover{
+            background-color: #ef233c;
+          }
+        }
+      }
+    }
+  }
+
+  .add{
+    margin: 3rem;
+    a{
+      text-decoration: none;
+      color : #81b29a;
+      border: 1px solid #81b29a;
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+
+      &:hover{
+        color: white;
+        border: 1px solid white;
+        background-color: #81b29a;
+      }
+    }
+  }
+
+  &__form{
+    .submit{
+      cursor: pointer;
+      color: #ff5400;
+      border: 1px solid #ff5400;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1.5rem;
+      transition: all 0.3s ease;
+      background-color: transparent;
+      width: 100%;
+
+      &:hover{
+        color: white;
+        border: 1px solid white;
+        background-color: #ff5400;
+      }
+    }
+  }
+}
+
+.home{
+  margin: 5rem;
+
+  &__links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a{
+      text-decoration: none;
+      color : #ff9f1c;
+      border: 1px solid #ff9f1c;
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+
+      &:hover{
+        color: white;
+        border: 1px solid white;
+        background-color: #ff9f1c;
+      }
+      &:nth-child(even){
+        color : #2ec4b6;
+        border: 1px solid #2ec4b6;
+
+        &:hover{
+          background-color: #2ec4b6;
+          color: white;
+        }
+      }
+    }
+  }
+}
+/*# sourceMappingURL=style.static.map */

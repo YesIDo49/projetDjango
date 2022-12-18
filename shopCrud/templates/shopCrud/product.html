@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produit</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+{% block content %}
+<h1>Produit :</h1>
+
+
+
+    <section class="product">
+
+        <div class="product__list">
+            <div class="item">
+                <div class="item__img">
+                    <img src="{{ one_data.image }}" width="250" height="200" alt="">
+                </div>
+                <div class="item__info">
+                    <h2>Nom produit :   {{one_data.name }}</h2>
+                    <h3>Prix : {{one_data.price }} €</h3>
+                    <h4>Stock : {{one_data.stock }}</h4>
+                </div>
+                <div class="item__action">
+                    <a href="{% url 'shopCrud:index'%}delete/{{ one_data.id }}">Supprimer</a>
+{#                    <a href="delete/{{ product.id }}">Supprimer</a>#}
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock content %}
+
+</body>
+</html>

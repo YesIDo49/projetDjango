@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+{% block content %}
+<h1>Shop Crud Project</h1>
+
+
+    <section class="home">
+
+    <div class="home__links">
+        <a href="shopCrud/">Liste produit</a>
+
+        <a href="admin/">Back Office Admin</a>
+    </div>
+
+    </section>
+{% endblock content %}
+
+</body>
+</html>

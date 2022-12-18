@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+{% block content %}
+<h1>Liste de produit</h1>
+
+
+    <section class="product">
+
+        <div class="product__list">
+
+
+            {% for product in my_data %}
+
+
+            <div class="item">
+                <div class="item__img">
+                    <img src="{{ product.image }}" width="250" height="200" alt="">
+                </div>
+                <div class="item__info">
+                    <h2>ID produit :   {{product.id }}</h2>
+                    <h2>Nom produit :   {{product.name }}</h2>
+                    <h3>Prix : {{product.price }} €</h3>
+                    <h4>Stock : {{product.stock }}</h4>
+                </div>
+                <div class="item__action">
+                    <a href="delete/{{ product.id }}" class="delete">Supprimer</a>
+
+                    <a href="/shopCrud/{{ product.id }}/">Voir produit</a>
+                </div>
+            </div>
+            {% endfor %}
+        
+        
+
+        </div>
+    
+        <div class="add">
+            <a href="add/">Ajouter produit</a>
+        </div>
+    </section>
+{% endblock content %}
+
+</body>
+</html>
