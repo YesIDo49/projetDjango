@@ -1,15 +1,15 @@
-# projetDjango
+# Projet Django
 
 Mehdi AL SID CHEIKH
 
 
-### Lancer Serveur
+## Lancer Serveur
 
 ```
  python manage.py runserver 3000
 ```
 
-### Compte admin
+## Compte admin
 
 #### Username : admin
 #### Email : admin@gmail.com
