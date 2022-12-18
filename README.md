@@ -11,9 +11,9 @@ Mehdi AL SID CHEIKH
 
 ### Compte admin
 
-# Username : admin
-# Email : admin@gmail.com
-# Password : admin
+#### Username : admin
+#### Email : admin@gmail.com
+#### Password : admin
 
 Si ça ne marche pas vous pouvez toujouts recréer un admin avec la commande suivante :
 
